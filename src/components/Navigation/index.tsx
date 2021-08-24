@@ -1,4 +1,4 @@
-import "./index.scss";
+import './index.scss';
 import React from 'react'; 
 
 function Navigation() {
@@ -11,7 +11,7 @@ function Navigation() {
         <span>D&D 5E</span>
         <span>Pathfinder 2E</span>
         <span>Contact Me</span>
-        <span>Patreon</span>
+        <span>Support on Patreon</span>
       </div>
     </div>
   );

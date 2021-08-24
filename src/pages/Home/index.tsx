@@ -1,14 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Navigation from './components/Navigation';
+import './index.scss';
+import Navigation from '../../components/Navigation';
+import Banner from '../../components/Banner';
+import IntroText from '../../components/IntroText';
+import ThreePanels from '../../components/ThreePanels';
 
 function App() {
   return (
-    <div className="App">
+    <div className="home">
       <Navigation />
+      <Banner />
+      <IntroText />
+      <ThreePanels />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
