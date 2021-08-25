@@ -1,3 +1,54 @@
+@import "../../styles/index.scss";
+
 .three-panels {
   display: flex;
+  justify-content: space-around;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  @include mq(m) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  @include mq(xl) {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+
+  &__section {
+    padding: 30px;
+    border: 1px solid #59190f;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
+    max-width: 300px;
+    border-radius: 5px;
+    // background: #ece3c7;
+    background: #964437;
+
+    &__title {
+      font-size: 24px;
+      font-weight: bold;
+      padding-bottom: 10px;
+      // color: #59190f;
+      color: white;
+    }
+    &__section {
+      font-size: 20px;
+      padding-bottom: 10px;
+      padding-left: 5px;
+      font-weight: bold;
+      color: white;
+    }
+    &__button {
+      // @include button-solid(#964437, white);
+      @include button-solid(#ece3c7, black);
+      margin-top: 50px;
+      width: 100%;
+      font-weight: bold;
+      font-size: 16px;
+
+      @include mq(xl) {
+        font-size: 20px;
+      }
+    }
+  }
 }

@@ -1,0 +1,60 @@
+@mixin button-solid($background-color: black, $text-color: black) {
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  outline: none;
+  padding: 6px 8px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
+
+  @include mq(m) {
+    padding: 6px 5px;
+  }
+  @include mq(xl) {
+    padding: 12px 15px;
+    line-height: 16px;
+    font-size: 16px;
+  }
+
+  @if $background-color == black {
+    border-color: $background-color;
+    color: $white;
+    background-color: $background-color;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $background-color;
+      background-color: $white;
+      border-color: $background-color;
+    }
+  } @else if $background-color == white {
+    border-color: $background-color;
+    color: $black;
+    background-color: $background-color;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $background-color;
+      background-color: $black;
+      border-color: $black;
+    }
+  } @else {
+    border-color: $background-color;
+    color: $text-color;
+    background-color: $background-color;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $background-color;
+      background-color: $text-color;
+      border-color: $text-color;
+    }
+  }
+}

@@ -1,7 +1,71 @@
+@import "../../styles/index.scss";
+
 .navigation {
-  display: flex;
-  justify-content: space-between;
   position: sticky;
   top: 0;
   background: white;
+  display: grid;
+  justify-items: center;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
+
+  @include mq(xl) {
+    grid-template-columns: auto 1440px auto;
+  }
+
+  &__container {
+    grid-column: 2;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    align-items: center;
+  }
+
+  &__title-container {
+    &__title {
+      font-size: 24px;
+      padding-left: 25px;
+      font-weight: bold;
+    }
+  }
+
+  &__links {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 40px;
+    padding-right: 25px;
+  }
+
+  &__links-container {
+    &__link {
+      font-size: 24px;
+      text-decoration: none;
+      color: black;
+
+      &:hover {
+        border-bottom: 1px solid #59190f;
+        margin-top: -1px;
+        color: #59190f;
+      }
+
+      &[data-type="patreon"] {
+        font-weight: bold;
+        color: #ed361e;
+
+        &:hover {
+          color: #ffd700;
+          border-bottom: 1px solid #ffd700;
+        }
+      }
+    }
+
+    &__dropdown {
+      display: none;
+
+      &__item {
+        display: grid;
+      }
+    }
+  }
 }

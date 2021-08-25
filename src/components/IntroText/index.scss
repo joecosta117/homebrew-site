@@ -1,0 +1,18 @@
+@import "../../styles/index.scss";
+
+.intro-text {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+
+  &__title {
+    font-weight: bold;
+    font-size: 40px;
+    padding-bottom: 10px;
+    color: #59190f;
+  }
+  &__subtitle {
+    font-size: 28px;
+    padding-bottom: 5px;
+  }
+}

@@ -1,5 +1,18 @@
+@import "../../styles/index.scss";
+
 .home {
-  text-align: center;
+  display: grid;
+  justify-items: center;
+
+  @include mq(xl) {
+    grid-template-columns: auto 1440px auto;
+  }
+
+  &__content {
+    grid-column: 2;
+    background: #ece3c7;
+    padding-bottom: 100px;
+  }
 }
 
 .App-logo {
