@@ -1,55 +1,110 @@
 import './index.scss';
-import React from 'react'; 
+import React, { useState, useEffect } from 'react';
+import useDevice from '../../utils/useDevice';
+
+interface Event {
+  target: {
+    dataset: {
+      type: string;
+    }
+  }
+};
 
 function Navigation() {
-  function toggleDropdown(event: React.ChangeEvent<HTMLInputElement>) {
+  const SCREEN_SIZE = useDevice();
+  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false)
+
+  function toggleMobileNav() {
+    setIsMobileNavOpen(!isMobileNavOpen)
+  }
+
+  function toggleDropdown(event: Event) {
     const dropdownType = event.target.dataset.type;
 
     document
       .querySelectorAll('.navigation__links-container__dropdown')
-        .forEach((element: object) => {
-          if (element.dataset.type === dropdownType) {
-            element.dataset.isActive === 'true'
-              ? (element.dataset.isActive = 'false')
-              : (element.dataset.isActive = 'true');
+      .forEach((element: any) => {
+        if (element.dataset.type === dropdownType) {
+            element.dataset.active === 'true'
+              ? (element.dataset.active = 'false')
+              : (element.dataset.active = 'true');
           } else {
-            element.dataset.isActive = 'false';
+            element.dataset.active = 'false';
           }
-        });
+      });
+    
+    document.querySelectorAll('.navigation__links-container__dropdown-arrow').forEach((element: any) => {
+      if (element.dataset.type === dropdownType) {
+            element.dataset.active === 'true'
+              ? (element.dataset.active = 'false')
+              : (element.dataset.active = 'true');
+          } else {
+            element.dataset.active = 'false';
+          }
+    })
   }
+
   return (
     <div className="navigation">
       <div className="navigation__container">
         <div className="navigation__title-container">
-          <span className="navigation__title-container__title">Joe Costa's Homebrew</span>
+          <a className="navigation__title-container__title" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">Fanatical Homebrew</a>
         </div>
-        <div className="navigation__links">
+        <div className="navigation__links" data-is-active={isMobileNavOpen}>
           <div className="navigation__links-container" data-type="5E" onClick={toggleDropdown}>
-            <a className="navigation__links-container__link" data-type="5E" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">D&D 5E</a>
-            <div className="navigation__links-container__dropdown" data-type="5E">
+            <div className="navigation__links-container__nav" data-type="5E">
+              <div className="navigation__links-container__link" data-type="5E">D&D 5E</div>
+              <button className="navigation__links-container__dropdown-arrow" data-type="5E" data-active='false'></button>
+            </div>
+            <div className="navigation__links-container__dropdown" data-type="5E"  data-active="false">
               <a className="navigation__links-container__dropdown__item" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">Classes</a>
-              <a className="navigation__links-container__dropdown__item" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">Subclass</a>
+              <a className="navigation__links-container__dropdown__item" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">Monsters</a>
               <a className="navigation__links-container__dropdown__item" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">Races</a>
+              <a className="navigation__links-container__dropdown__item" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">Spells</a>
+              <a className="navigation__links-container__dropdown__item" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">Subclasses</a>
             </div>
           </div>
 
           <div className="navigation__links-container" data-type="2E" onClick={toggleDropdown}>
-            <a className="navigation__links-container__link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer" data-type="2E">Pathfinder 2E</a>
-            <div className="navigation__links-container__dropdown" data-type="2E">
-              <a className="navigation__links-container__dropdown__item" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">Classes</a>
-              <a className="navigation__links-container__dropdown__item" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">Archetypes</a>
+            <div className="navigation__links-container__nav" data-type="2E">
+              <div className="navigation__links-container__link" data-type="2E">Pathfinder 2E</div>
+              <button className="navigation__links-container__dropdown-arrow" data-type="2E"></button>
+            </div>
+            
+            <div className="navigation__links-container__dropdown" data-type="2E" data-active="false">
               <a className="navigation__links-container__dropdown__item" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">Ancestries</a>
+              <a className="navigation__links-container__dropdown__item" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">Archetypes</a>
+              <a className="navigation__links-container__dropdown__item" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">Classes</a>
+              <a className="navigation__links-container__dropdown__item" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">Spells</a>
             </div>
           </div>
 
-          <div className="navigation__links-container">
-            <a className="navigation__links-container__link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">Contact Me</a>
+          <div className="navigation__links-container" onClick={toggleDropdown} data-type="contact">
+            <div className="navigation__links-container__nav" data-type="contact">
+              <div className="navigation__links-container__link" data-type="contact">Contact Me</div>
+              <button className="navigation__links-container__dropdown-arrow" data-type="contact"></button>
+            </div>
+            
+            <div className="navigation__links-container__dropdown" data-type="contact"  data-active="false">
+              <a className="navigation__links-container__dropdown__item" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">Feedback</a>
+              <a className="navigation__links-container__dropdown__item" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">Email</a>
+              <a className="navigation__links-container__dropdown__item" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">Reddit</a>
+            </div>
           </div>
           
-          <div className="navigation__links-container">
-            <a className="navigation__links-container__link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer" data-type="patreon">Support on Patreon</a>
+          <div className="navigation__links-container" data-open-mobile="true">
+            <div className="navigation__links-container__nav">
+              <a className="navigation__links-container__link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer" data-type="patreon">Support on Patreon</a>
+            </div>
+            
           </div>
         </div>
+        <div className="navigation__mobile-menu" onClick={toggleMobileNav} data-is-active={isMobileNavOpen}>
+            <span className="mobile-menu-icon"></span>
+            <span className="mobile-menu-icon"></span>
+            <span className="mobile-menu-icon"></span>
+            <span className="mobile-menu-icon"></span>
+          </div>
       </div>
     </div>
   );
