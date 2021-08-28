@@ -1,0 +1,20 @@
+@import "../../styles/index.scss";
+
+.card-container {
+  display: grid;
+  grid-gap: 30px;
+
+  @include mq(s) {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0;
+    grid-row-gap: 60px;
+  }
+  @include mq(m) {
+    padding-top: 15px;
+  }
+  @include mq(xl) {
+    padding-left: 32px;
+    padding-right: 32px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

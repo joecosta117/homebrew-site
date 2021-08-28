@@ -1,6 +1,11 @@
 @import "../../styles/index.scss";
 
 .banner {
+  padding-bottom: 25px;
+
+  @include mq(m) {
+    padding-bottom: 30px;
+  }
   &__image {
     background-size: cover;
     width: 100%;

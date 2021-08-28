@@ -4,7 +4,7 @@ import Banner from '../../components/Banner';
 import IntroText from '../../components/IntroText';
 import ThreePanels from '../../components/ThreePanels';
 
-function App() {
+function Home() {
   return (
     <div className="home">
       <div className="home__content">
@@ -16,4 +16,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

@@ -1,25 +1,32 @@
 import './index.scss';
 import React, { useState, useEffect } from 'react';
-import useDevice from '../../utils/useDevice';
-
-interface Event {
-  target: {
-    dataset: {
-      type: string;
-    }
-  }
-};
+import { Link } from 'react-router-dom';
 
 function Navigation() {
-  const SCREEN_SIZE = useDevice();
-  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false)
+  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+  const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
+  useEffect(() => {
+    window.onscroll = function() {
+      const currentScrollPos = window.pageYOffset;
+
+      if (prevScrollPos > currentScrollPos) {
+        const nav = document.getElementById('nav');
+        if (nav) nav.style.top = "0";
+      } else {
+        const nav = document.getElementById('nav');
+        if (nav) nav.style.top = "-60px";
+      }
+      setPrevScrollPos(currentScrollPos)
+    }
+  }, [prevScrollPos])
 
   function toggleMobileNav() {
     setIsMobileNavOpen(!isMobileNavOpen)
   }
 
-  function toggleDropdown(event: Event) {
+  function toggleDropdown(event: any) {
     const dropdownType = event.target.dataset.type;
+    console.log('inside troggleDropdwon: ', dropdownType)
 
     document
       .querySelectorAll('.navigation__links-container__dropdown')
@@ -45,10 +52,10 @@ function Navigation() {
   }
 
   return (
-    <div className="navigation">
+      <div className="navigation" id="nav">
       <div className="navigation__container">
         <div className="navigation__title-container">
-          <a className="navigation__title-container__title" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">Fanatical Homebrew</a>
+          <Link to='/' className="navigation__title-container__title">Fanatical DM</Link>
         </div>
         <div className="navigation__links" data-is-active={isMobileNavOpen}>
           <div className="navigation__links-container" data-type="5E" onClick={toggleDropdown}>
@@ -57,7 +64,7 @@ function Navigation() {
               <button className="navigation__links-container__dropdown-arrow" data-type="5E" data-active='false'></button>
             </div>
             <div className="navigation__links-container__dropdown" data-type="5E"  data-active="false">
-              <a className="navigation__links-container__dropdown__item" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">Classes</a>
+              <Link className="navigation__links-container__dropdown__item" to="/dnd-classes">Classes</Link>
               <a className="navigation__links-container__dropdown__item" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">Monsters</a>
               <a className="navigation__links-container__dropdown__item" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">Races</a>
               <a className="navigation__links-container__dropdown__item" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">Spells</a>
