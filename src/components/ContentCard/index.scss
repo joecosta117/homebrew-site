@@ -47,18 +47,6 @@
         font-size: 22px;
       }
     }
-    &__text-list {
-      margin: 0;
-      padding-top: 5px;
-
-      li {
-        padding-bottom: 5px;
-
-        &:last-child {
-          padding-bottom: 0;
-        }
-      }
-    }
     &__button {
       @include button-solid($lavared, $white);
       margin-top: 25px;

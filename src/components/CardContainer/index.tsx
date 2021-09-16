@@ -1,13 +1,17 @@
-import React from 'react';
+import React  from 'react';
 import ContentCard from '../../components/ContentCard';
 import './index.scss';
 
-function CardContainer() {
+interface cardsContainerProps {
+  cardsData: any;
+}
+
+function CardContainer({ cardsData }: cardsContainerProps) {
   return (
     <div className="card-container">
-      <ContentCard />
-      <ContentCard />
-      <ContentCard />
+      {cardsData.map((card: any, index: number) => (
+        <ContentCard cardContent={card} key={index} />
+      ))}
     </div>
   );
 }

@@ -1,23 +1,9 @@
 @import "../../styles/index.scss";
 
 .home {
-  display: grid;
-  justify-items: center;
-
-  @include mq(xl) {
-    grid-template-columns: auto 1440px auto;
-  }
+  @include page-layout;
 
   &__content {
-    background: #ece3c7;
-    padding-bottom: 50px;
-    width: 100%;
-
-    @include mq(m) {
-      padding-bottom: 100px;
-    }
-    @include mq(xl) {
-      grid-column: 2;
-    }
+    @include page-content;
   }
 }

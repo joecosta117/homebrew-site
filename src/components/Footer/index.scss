@@ -12,14 +12,12 @@
 
   &__container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding-top: 30px;
     padding-bottom: 30px;
-    padding-left: 16px;
 
     @include mq(m) {
       padding-left: 0;
-      flex-direction: column;
       padding-top: 50px;
       padding-bottom: 50px;
     }
@@ -30,11 +28,15 @@
 
   &__links {
     display: grid;
-    grid-row-gap: 20px;
+    grid-auto-flow: column;
 
+    @include mq(s) {
+      padding-left: 64px;
+      padding-right: 64px;
+    }
     @include mq(m) {
-      grid-auto-flow: column;
-      grid-gap: 30px;
+      padding-left: 128px;
+      padding-right: 128px;
     }
 
     &__link {
@@ -42,6 +44,7 @@
       color: white;
       font-size: 18px;
       font-weight: bold;
+      justify-self: center;
 
       &:hover {
         color: #ed361e;
@@ -50,16 +53,9 @@
   }
 
   &__patreon {
-    padding-left: 25px;
     display: flex;
     flex-direction: column;
-
-    @include mq(s) {
-      padding-left: 50px;
-    }
-    @include mq(m) {
-      padding-left: 0px;
-    }
+    align-items: center;
 
     &__description {
       padding-top: 20px;
@@ -90,6 +86,29 @@
         width: 300px;
         font-size: 20px;
       }
+    }
+  }
+
+  &__disclaimer {
+    padding-top: 35px;
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include mq(s) {
+      width: 500px;
+    }
+    @include mq(m) {
+      width: 600px;
+      padding-top: 40px;
+    }
+
+    &__text {
+      font-size: 18px;
+      color: $white;
+      padding-bottom: 15px;
     }
   }
 }

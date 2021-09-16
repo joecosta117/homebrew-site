@@ -1,0 +1,22 @@
+@import "../../styles/index.scss";
+
+.subclasses {
+  @include page-layout;
+
+  &__content {
+    @include page-content;
+    display: grid;
+
+    &__title {
+      font-weight: bold;
+      font-size: 32px;
+      padding-bottom: 25px;
+      color: $redwood;
+      margin: auto;
+
+      @include mq(m) {
+        font-size: 48px;
+      }
+    }
+  }
+}

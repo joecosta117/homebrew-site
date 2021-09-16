@@ -1,0 +1,30 @@
+@mixin page-layout() {
+  display: grid;
+  justify-items: center;
+
+  @include mq(xl) {
+    grid-template-columns: auto 1440px auto;
+  }
+}
+
+@mixin page-content() {
+  background: $parchment;
+  padding-bottom: 50px;
+  width: 100%;
+
+  @include mq(m) {
+    padding-bottom: 100px;
+  }
+  @include mq(xl) {
+    grid-column: 2;
+  }
+}
+
+// @mixin page-content() {
+//   @include home-page-content;
+//   padding-top: 50px;
+
+//   @include mq(m) {
+//     padding-top: 100px;
+//   }
+// }

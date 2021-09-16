@@ -64,11 +64,10 @@ function Navigation() {
               <button className="navigation__links-container__dropdown-arrow" data-type="5E" data-active='false'></button>
             </div>
             <div className="navigation__links-container__dropdown" data-type="5E"  data-active="false">
-              <Link className="navigation__links-container__dropdown__item" to="/dnd-classes">Classes</Link>
-              <a className="navigation__links-container__dropdown__item" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">Monsters</a>
-              <a className="navigation__links-container__dropdown__item" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">Races</a>
-              <a className="navigation__links-container__dropdown__item" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">Spells</a>
-              <a className="navigation__links-container__dropdown__item" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">Subclasses</a>
+              <Link className="navigation__links-container__dropdown__item" to="/5e-classes">Classes</Link>
+              <Link className="navigation__links-container__dropdown__item" to="/5e-monsters">Monsters</Link>
+              <Link className="navigation__links-container__dropdown__item" to="/5e-races">Races</Link>
+              <Link className="navigation__links-container__dropdown__item" to="/5e-subclasses">Subclasses</Link>
             </div>
           </div>
 
@@ -79,10 +78,8 @@ function Navigation() {
             </div>
             
             <div className="navigation__links-container__dropdown" data-type="2E" data-active="false">
-              <a className="navigation__links-container__dropdown__item" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">Ancestries</a>
-              <a className="navigation__links-container__dropdown__item" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">Archetypes</a>
-              <a className="navigation__links-container__dropdown__item" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">Classes</a>
-              <a className="navigation__links-container__dropdown__item" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">Spells</a>
+              <Link className="navigation__links-container__dropdown__item" to="/2e-ancestries">Ancestries</Link>
+              <Link className="navigation__links-container__dropdown__item" to="/2e-classes">Classes</Link>
             </div>
           </div>
 
@@ -93,9 +90,8 @@ function Navigation() {
             </div>
             
             <div className="navigation__links-container__dropdown" data-type="contact"  data-active="false">
-              <a className="navigation__links-container__dropdown__item" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">Feedback</a>
-              <a className="navigation__links-container__dropdown__item" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">Email</a>
-              <a className="navigation__links-container__dropdown__item" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">Reddit</a>
+              <Link className="navigation__links-container__dropdown__item" to="/contact">Email</Link>
+              <a className="navigation__links-container__dropdown__item" href="https://www.reddit.com/r/FanaticalDM/" target="_blank" rel="noopener noreferrer">Reddit</a>
             </div>
           </div>
           
