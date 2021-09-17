@@ -1,15 +1,16 @@
 import React from 'react';
 import './index.scss';
+import { Link } from 'react-router-dom';
 
 function ThreePanels() {
   return (
     <div className="three-panels">
       <div className="three-panels__section">
         <div className="three-panels__section__title">D&D 5E Content</div>
-        <div className="three-panels__section__section">New Classes</div>
-        <div className="three-panels__section__section">New Subclasses</div>
-        <div className="three-panels__section__section">New Races</div>
-        <div className="three-panels__section__section">New Monsters</div>
+        <Link className="three-panels__section__link" to="/5e-classes">New Classes</Link>
+        <Link className="three-panels__section__link" to="/5e-subclasses">New Classes</Link>
+        <Link className="three-panels__section__link" to="/5e-races">New Races</Link>
+        <Link className="three-panels__section__link" to="/5e-monsters">New Monsters</Link>
       </div>
 
       <div className="three-panels__section">
@@ -20,8 +21,8 @@ function ThreePanels() {
       
       <div className="three-panels__section">
         <div className="three-panels__section__title">Pathinder 2E Content</div>
-        <div className="three-panels__section__section">New Classes</div>
-        <div className="three-panels__section__section">New Ancestries</div>
+        <Link className="three-panels__section__link" to="/2e-classes">New Classes</Link>
+        <Link className="three-panels__section__link" to="/2e-ancestries">New Ancestries</Link>
       </div>
     </div>
   );

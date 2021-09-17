@@ -26,6 +26,9 @@
     border-radius: 5px;
     background: #964437;
     margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    min-height: 170px;
 
     &:last-child {
       margin-bottom: 0;
@@ -49,12 +52,20 @@
       padding-bottom: 10px;
       color: white;
     }
-    &__section {
+    &__section,
+    &__link {
       font-size: 20px;
       padding-bottom: 10px;
       padding-left: 5px;
       font-weight: bold;
       color: white;
+    }
+    &__link {
+      text-decoration: none;
+
+      &:hover {
+        color: $lavared;
+      }
     }
     &__button {
       @include button-solid($white, $lavared);
