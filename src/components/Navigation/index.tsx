@@ -9,7 +9,6 @@ function Navigation() {
   useEffect(() => {
     window.onscroll = function() {
       const currentScrollPos = window.pageYOffset;
-      // console.log('currentScrollPos', currentScrollPos, 'prevScrollPos,', prevScrollPos)
 
       if (currentScrollPos > 41) {
         if (prevScrollPos > currentScrollPos) {
@@ -20,7 +19,6 @@ function Navigation() {
           if (nav) nav.style.top = "-60px";
         }
       }
-
       
       setPrevScrollPos(currentScrollPos)
     }
