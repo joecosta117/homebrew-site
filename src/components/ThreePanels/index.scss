@@ -19,7 +19,7 @@
 
   &__section {
     padding: 20px;
-    border: 1px solid #59190f;
+    border: 1px solid $redwood;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
     width: 100%;
     max-width: 300px;
@@ -50,7 +50,7 @@
       font-size: 24px;
       font-weight: bold;
       padding-bottom: 10px;
-      color: white;
+      color: $white;
     }
     &__section,
     &__link {
@@ -58,7 +58,7 @@
       padding-bottom: 10px;
       padding-left: 5px;
       font-weight: bold;
-      color: white;
+      color: $white;
     }
     &__link {
       text-decoration: none;
@@ -69,11 +69,14 @@
     }
     &__button {
       @include button-solid($white, $lavared);
-      margin-top: 50px;
+      margin-top: 30px;
       width: 100%;
       font-weight: bold;
-      font-size: 16px;
+      padding: 12px;
+      font-size: 20px;
 
+      @include mq(m) {
+      }
       @include mq(xl) {
         font-size: 20px;
       }

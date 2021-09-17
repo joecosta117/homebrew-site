@@ -1,13 +1,14 @@
 import './index.scss';
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { BREAKPOINTS } from '../../utils/useDevice';
 
 function Navigation() {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
   useEffect(() => {
     window.onscroll = function() {
-      const currentScrollPos = window.pageYOffset;
+      const currentScrollPos = window.pageYOffset; 
 
       if (prevScrollPos > currentScrollPos) {
         const nav = document.getElementById('nav');
@@ -21,7 +22,9 @@ function Navigation() {
   }, [prevScrollPos])
 
   function toggleMobileNav() {
-    setIsMobileNavOpen(!isMobileNavOpen)
+    if (window.innerWidth < BREAKPOINTS.DESKTOP) {
+      setIsMobileNavOpen(!isMobileNavOpen)
+    }
   }
 
   function toggleDropdown(event: any) {
@@ -64,10 +67,10 @@ function Navigation() {
               <button className="navigation__links-container__dropdown-arrow" data-type="5E" data-active='false'></button>
             </div>
             <div className="navigation__links-container__dropdown" data-type="5E"  data-active="false">
-              <Link className="navigation__links-container__dropdown__item" to="/5e-classes">Classes</Link>
-              <Link className="navigation__links-container__dropdown__item" to="/5e-monsters">Monsters</Link>
-              <Link className="navigation__links-container__dropdown__item" to="/5e-races">Races</Link>
-              <Link className="navigation__links-container__dropdown__item" to="/5e-subclasses">Subclasses</Link>
+              <Link className="navigation__links-container__dropdown__item" to="/5e-classes" onClick={toggleMobileNav}>Classes</Link>
+              <Link className="navigation__links-container__dropdown__item" to="/5e-monsters" onClick={toggleMobileNav}>Monsters</Link>
+              <Link className="navigation__links-container__dropdown__item" to="/5e-races" onClick={toggleMobileNav}>Races</Link>
+              <Link className="navigation__links-container__dropdown__item" to="/5e-subclasses" onClick={toggleMobileNav}>Subclasses</Link>
             </div>
           </div>
 
@@ -78,8 +81,8 @@ function Navigation() {
             </div>
             
             <div className="navigation__links-container__dropdown" data-type="2E" data-active="false">
-              <Link className="navigation__links-container__dropdown__item" to="/2e-ancestries">Ancestries</Link>
-              <Link className="navigation__links-container__dropdown__item" to="/2e-classes">Classes</Link>
+              <Link className="navigation__links-container__dropdown__item" to="/2e-ancestries" onClick={toggleMobileNav}>Ancestries</Link>
+              <Link className="navigation__links-container__dropdown__item" to="/2e-classes" onClick={toggleMobileNav}>Classes</Link>
             </div>
           </div>
 
@@ -90,7 +93,7 @@ function Navigation() {
             </div>
             
             <div className="navigation__links-container__dropdown" data-type="contact"  data-active="false">
-              <Link className="navigation__links-container__dropdown__item" to="/contact">Email</Link>
+              <Link className="navigation__links-container__dropdown__item" to="/contact" onClick={toggleMobileNav}>Email</Link>
               <a className="navigation__links-container__dropdown__item" href="https://www.reddit.com/r/FanaticalDM/" target="_blank" rel="noopener noreferrer">Reddit</a>
             </div>
           </div>

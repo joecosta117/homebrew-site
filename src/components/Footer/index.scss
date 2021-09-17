@@ -41,7 +41,7 @@
 
     &__link {
       text-decoration: none;
-      color: white;
+      color: $white;
       font-size: 18px;
       font-weight: bold;
       justify-self: center;
@@ -60,7 +60,7 @@
     &__description {
       padding-top: 20px;
       font-size: 18px;
-      color: white;
+      color: $white;
       width: 250px;
       text-align: center;
 
@@ -74,14 +74,12 @@
     &__button {
       @include button-solid(#ed361e, white);
       margin-top: 20px;
-      width: 200px;
+      width: 250px;
       font-weight: bold;
-      font-size: 16px;
+      font-size: 20px;
+      padding: 12px;
       align-self: center;
 
-      @include mq(m) {
-        width: 250px;
-      }
       @include mq(xl) {
         width: 300px;
         font-size: 20px;

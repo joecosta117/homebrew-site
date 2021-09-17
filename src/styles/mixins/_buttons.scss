@@ -22,14 +22,14 @@
 
   @if $background-color == black {
     border-color: $background-color;
-    color: white;
+    color: $white;
     background-color: $background-color;
 
     &:hover,
     &:focus,
     &:active {
       color: $background-color;
-      background-color: white;
+      background-color: $white;
       border-color: $background-color;
     }
   } @else if $background-color == white {
