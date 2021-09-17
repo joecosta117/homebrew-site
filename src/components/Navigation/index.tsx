@@ -8,15 +8,20 @@ function Navigation() {
   const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
   useEffect(() => {
     window.onscroll = function() {
-      const currentScrollPos = window.pageYOffset; 
+      const currentScrollPos = window.pageYOffset;
+      // console.log('currentScrollPos', currentScrollPos, 'prevScrollPos,', prevScrollPos)
 
-      if (prevScrollPos > currentScrollPos) {
-        const nav = document.getElementById('nav');
-        if (nav) nav.style.top = "0";
-      } else {
-        const nav = document.getElementById('nav');
-        if (nav) nav.style.top = "-60px";
+      if (currentScrollPos > 41) {
+        if (prevScrollPos > currentScrollPos) {
+          const nav = document.getElementById('nav');
+          if (nav) nav.style.top = "0";
+        } else {
+          const nav = document.getElementById('nav');
+          if (nav) nav.style.top = "-60px";
+        }
       }
+
+      
       setPrevScrollPos(currentScrollPos)
     }
   }, [prevScrollPos])
