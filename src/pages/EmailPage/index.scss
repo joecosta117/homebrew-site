@@ -107,14 +107,14 @@
       margin-right: 16px;
       font-weight: bold;
       font-size: 16px;
-      padding: 8px;
+      padding: 12px;
+      font-size: 20px;
 
       @include mq(s) {
         max-width: 200px;
       }
       @include mq(m) {
         margin-top: 20px;
-        font-size: 20px;
         padding: 12px 8px;
       }
     }
