@@ -29,7 +29,7 @@ function EmailPage() {
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="email-page__form__input-heading">Email</div>
             <div className="email-page__form__input-container">
-              <input className="email-page__form__input" type="text" {...register("email", { required: true, pattern: /^(([^<>()\\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/ })} />
+              <input className="email-page__form__input" type="text" {...register("email", { required: true, pattern: /^(([^<>()\\[\]\\.,;:\s@"]+(\.[^<>()\\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/ })} />
               {errors.email && <span className="email-page__form__error">Please enter a valid email address</span>}
             </div>
             
