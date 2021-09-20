@@ -55,13 +55,13 @@
     &__section,
     &__link {
       font-size: 20px;
-      padding-bottom: 10px;
-      padding-left: 5px;
+      margin-bottom: 10px;
+      margin-left: 5px;
       font-weight: bold;
       color: $white;
     }
     &__link {
-      text-decoration: none;
+      color: $parchment;
 
       &:hover {
         color: $lavared;

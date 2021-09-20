@@ -79,10 +79,12 @@
       }
     }
     &__subclass {
-      padding-bottom: 10px;
+      margin-bottom: 10px;
+
+      // text-decoration: underline;
 
       &:last-child {
-        padding-bottom: 0;
+        margin-bottom: 0;
       }
 
       a {
@@ -96,9 +98,16 @@
 
         span {
           font-weight: bold;
+          border-bottom: 1px solid $lavared;
+          color: $lavared;
         }
         &:hover {
-          color: $lavared;
+          color: $redwood;
+
+          span {
+            border-bottom: 1px solid $redwood;
+            color: $redwood;
+          }
         }
       }
     }
