@@ -8,7 +8,7 @@ function ThreePanels() {
       <div className="three-panels__section">
         <div className="three-panels__section__title">D&D 5E Content</div>
         <Link className="three-panels__section__link" to="/5e-classes">New Classes</Link>
-        <Link className="three-panels__section__link" to="/5e-subclasses">New Classes</Link>
+        <Link className="three-panels__section__link" to="/5e-subclasses">New Subclasses</Link>
         <Link className="three-panels__section__link" to="/5e-races">New Races</Link>
         <Link className="three-panels__section__link" to="/5e-monsters">New Monsters</Link>
       </div>
