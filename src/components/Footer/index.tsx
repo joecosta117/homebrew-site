@@ -3,12 +3,19 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Footer() {
+  function redirect() {
+    window.open('https://www.patreon.com/FanaticalDM', '_blank')
+  }
+
   return (
     <div className="footer">
       <div className="footer__container">
         <div className="footer__links">
           <Link className="footer__links__link" to="/">
             Home
+          </Link>
+          <Link className="footer__links__link" to="/contact">
+            Email
           </Link>
           <a
             className="footer__links__link"
@@ -18,16 +25,21 @@ function Footer() {
           >
             Reddit
           </a>
-          <Link className="footer__links__link" to="/contact">
-            Email
-          </Link>
+          <a
+            className="footer__links__link"
+            href="https://twitter.com/FanaticalDm"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Twitter
+          </a>
         </div>
 
         <div className="footer__patreon">
           <div className="footer__patreon__description">
             Made possible by your monthly support
           </div>
-          <button className="footer__patreon__button">
+          <button className="footer__patreon__button" onClick={redirect}>
             Support on Patreon
           </button>
         </div>

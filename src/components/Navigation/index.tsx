@@ -196,6 +196,14 @@ function Navigation() {
               >
                 Reddit
               </a>
+              <a
+                className="navigation__links-container__dropdown__item"
+                href="https://twitter.com/FanaticalDm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Twitter
+              </a>
             </div>
           </div>
 
@@ -203,7 +211,7 @@ function Navigation() {
             <div className="navigation__links-container__nav">
               <a
                 className="navigation__links-container__link"
-                href="https://reactjs.org"
+                href="https://www.patreon.com/FanaticalDM"
                 target="_blank"
                 rel="noopener noreferrer"
                 data-type="patreon"
