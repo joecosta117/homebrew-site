@@ -197,7 +197,7 @@ function Navigation() {
               </Link>
               <a
                 className="navigation__links-container__dropdown__item"
-                href="https://www.reddit.com/u/FanaticalDM/"
+                href="https://www.reddit.com/u/fanatic66/"
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -19,7 +19,7 @@ function Footer() {
           </Link>
           <a
             className="footer__links__link"
-            href="https://www.reddit.com/u/FanaticalDM/"
+            href="https://www.reddit.com/u/fanatic66/"
             target="_blank"
             rel="noopener noreferrer"
           >
