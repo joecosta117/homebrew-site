@@ -147,6 +147,13 @@ function Navigation() {
               </Link>
               <Link
                 className="navigation__links-container__dropdown__item"
+                to="/2e-archetypes"
+                onClick={toggleMobileNav}
+              >
+                Archetypes
+              </Link>
+              <Link
+                className="navigation__links-container__dropdown__item"
                 to="/2e-classes"
                 onClick={toggleMobileNav}
               >

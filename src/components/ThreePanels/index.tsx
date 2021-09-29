@@ -26,6 +26,7 @@ function ThreePanels() {
       <div className="three-panels__section">
         <div className="three-panels__section__title">Pathinder 2E Content</div>
         <Link className="three-panels__section__link" to="/2e-classes">New Classes</Link>
+        <Link className="three-panels__section__link" to="/2e-archetypes">New Archetypes</Link>
         <Link className="three-panels__section__link" to="/2e-ancestries">New Ancestries</Link>
       </div>
     </div>

@@ -22,6 +22,7 @@ function App() {
             <Route exact path="/5e-subclasses" component={SubclassesPage} />
             <Route exact path="/5e-races" component={ContentPage} />
             <Route exact path="/2e-ancestries" component={ContentPage} />
+            <Route exact path="/2e-archetypes" component={ContentPage} />
             <Route exact path="/2e-classes" component={ContentPage} />
             <Route exact path="/contact" component={EmailPage} />
           </Switch>

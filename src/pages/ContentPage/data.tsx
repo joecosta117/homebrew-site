@@ -91,6 +91,14 @@ const contentData: contentDataType = {
         url: 'https://drive.google.com/file/d/1jh9j_VMtgTyqn3c6ru6ZzB5q7VdaV0eF/view?usp=sharing',
       }
     ],
+    archetypes: [
+      {
+        name: 'Eldritch Scion',
+        description: 'Play as a Magus whose power comes from a powerful magical bloodline much like a Sorcerer. This class archetype transforms the Magus into a charismatic, spontaneous spellcaster!',
+        image: SwordmageImage,
+        url: 'https://drive.google.com/file/d/1I5WM3cSsKsDDGLBMdvTrqtuRkhANefGB/view?usp=sharing',
+      },
+    ],
     ancestries: [
       {
         name: 'Dragonborn',
@@ -103,14 +111,6 @@ const contentData: contentDataType = {
         description: 'Play a warforged, a sentient construct built out of a combination of wood and metal. Originally constructed as durable soldiers, warforged are not mindless automatons, but instead sentient creatures capable of feeling pain and complex emotion.',
         image: Warforged,
         url: 'https://drive.google.com/file/d/1PHhgyhQk1tFs06TX7V99X00P5ky-smYc/view?usp=sharing',
-      }
-    ],
-    archetypes: [
-      {
-        name: '',
-        description: '',
-        image: '',
-        url: '',
       }
     ],
     spells: [
