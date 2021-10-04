@@ -24,6 +24,7 @@ export interface contentType {
   ancestries?: Array<contentInfoType>;
   archetypes?: Array<contentInfoType>;
   spells?: Array<contentInfoType>;
+  systems?: Array<contentInfoType>;
 }
 
 export interface contentDataType {
@@ -67,6 +68,14 @@ const contentData: contentDataType = {
         description: 'More options for players looking to play fiendish tieflings such as mortals descended from tricky rakshasa or cruel yugoloth. There are also options to play a tiefling tied to the chaotic demons of the Abyss with subraces for 10 demon lords!',
         image: Tieflings,
         url: 'https://drive.google.com/file/d/1JOKOj3WHrF8W9A4nWhbnlh79NxpGxzPq/view?usp=sharing',
+      }
+    ],
+    systems: [
+      {
+        name: '10 New Conditions',
+        description: 'Surprise your players with these new conditions for 5E. Throw them on monsters, create new magical items, and let your imagination run wild!',
+        image: DarknessDevil,
+        url: 'https://drive.google.com/file/d/1KgsCKktqnMsD5rFNt8Dh8Q7li7ZIz6rD/view?usp=sharing',
       }
     ],
   },
