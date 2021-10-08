@@ -96,6 +96,13 @@ function Navigation() {
               </Link>
               <Link
                 className="navigation__links-container__dropdown__item"
+                to="/5e-magic-items"
+                onClick={toggleMobileNav}
+              >
+                Magic Items
+              </Link>
+              <Link
+                className="navigation__links-container__dropdown__item"
                 to="/5e-monsters"
                 onClick={toggleMobileNav}
               >

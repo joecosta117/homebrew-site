@@ -8,7 +8,7 @@ import Banner from '../../components/Banner';
 function ContentPage() {
   const location = useLocation();
   const system = location.pathname.slice(1, 3) === '5e' ? 'dnd' : 'pf'
-  const pageType: keyof contentType | string = location.pathname.slice(4);
+  const pageType: keyof contentType | string = location.pathname.slice(4) === 'magic-items' ? 'items' : location.pathname.slice(4);
   const systemData: contentType = contentData[system];
   // @ts-ignore
   const pageData = systemData[pageType];

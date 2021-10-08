@@ -18,6 +18,7 @@ function App() {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/5e-classes" component={ContentPage} />
+            <Route exact path="/5e-magic-items" component={ContentPage} />
             <Route exact path="/5e-monsters" component={ContentPage} />
             <Route exact path="/5e-subclasses" component={SubclassesPage} />
             <Route exact path="/5e-races" component={ContentPage} />

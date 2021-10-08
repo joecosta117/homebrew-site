@@ -8,6 +8,7 @@ import Dragonborn from '../../assets/dragonborn.jpeg';
 import Warlord from '../../assets/warlord.jpeg';
 import Avenger from '../../assets/avenger.jpeg';
 import WildMagic from '../../assets/wild-magic.jpeg';
+import Tiamat from '../../assets/tiamat.jpeg';
 
 export interface contentInfoType {
   name: string,
@@ -25,6 +26,7 @@ export interface contentType {
   archetypes?: Array<contentInfoType>;
   spells?: Array<contentInfoType>;
   systems?: Array<contentInfoType>;
+  items?: Array<contentInfoType>;
 }
 
 export interface contentDataType {
@@ -78,6 +80,14 @@ const contentData: contentDataType = {
         url: 'https://drive.google.com/file/d/1KgsCKktqnMsD5rFNt8Dh8Q7li7ZIz6rD/view?usp=sharing',
       }
     ],
+    items: [
+      {
+        name: 'Relics of the Dragon Gods Part 1',
+        description: 'The mighty dragons god have created powerful artifacts to reward their mortal followers. In part 1, discover the terrible power of the first three Chromatic Relics: Fiery Wrath, Dread Stalker, and White Fang!',
+        image: Tiamat,
+        url: 'https://drive.google.com/file/d/1wXSyHdpiWlelIs4-x-cZut_ItyvscnlN/view?usp=sharing',
+      }
+    ]
   },
   pf: {
     classes: [
