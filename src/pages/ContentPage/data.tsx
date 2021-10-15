@@ -103,20 +103,26 @@ const contentData: contentDataType = {
         image: Warlord,
         url: 'https://drive.google.com/file/d/1GoeY2y8alwX3Apr3joGMkD9uGsl2Rv_k/view?usp=sharing',
       },
-      {
-        name: 'Wild Magic Sorcerer',
-        description: 'Your innate magic comes from the forces of chaos, such as planar exposure, magical experimentation, magical fallout, or being marked by a creature of chaos. Play as an arcane sorcerer that commands unpredictable magic!',
-        image: WildMagic,
-        url: 'https://drive.google.com/file/d/1jh9j_VMtgTyqn3c6ru6ZzB5q7VdaV0eF/view?usp=sharing',
-      }
     ],
     archetypes: [
+      {
+        name: 'Bloodcaster',
+        description: 'Play as a terrifying blood bender that can manipulates the vitality of others. This spooky archetype can be used by any caster class to give your character access to darker necromantic magic.',
+        image: 'https://cdnb.artstation.com/p/assets/images/images/030/002/237/medium/cristi-balanescu-znr-blood-beckoning.jpg?1599291741',
+        url: 'https://drive.google.com/file/d/1nXHtElxuGrK9_NQccyBsVJWgzKTSqWKc/view?usp=sharing',
+      },
       {
         name: 'Eldritch Scion',
         description: 'Play as a Magus whose power comes from a powerful magical bloodline much like a Sorcerer. This class archetype transforms the Magus into a charismatic, spontaneous spellcaster!',
         image: SwordmageImage,
         url: 'https://drive.google.com/file/d/1I5WM3cSsKsDDGLBMdvTrqtuRkhANefGB/view?usp=sharing',
       },
+      {
+        name: 'Wild Magic Sorcerer',
+        description: 'Your innate magic comes from the forces of chaos, such as magical experimentation or being marked by a creature of chaos. Play as an arcane sorcerer that commands unpredictable magic!',
+        image: WildMagic,
+        url: 'https://drive.google.com/file/d/1jh9j_VMtgTyqn3c6ru6ZzB5q7VdaV0eF/view?usp=sharing',
+      }
     ],
     ancestries: [
       {
