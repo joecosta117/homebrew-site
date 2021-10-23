@@ -86,6 +86,12 @@ const contentData: contentDataType = {
         description: 'The mighty dragons god have created powerful artifacts to reward their mortal followers. In part 1, discover the terrible power of the first three Chromatic Relics: Fiery Wrath, Dread Stalker, and White Fang!',
         image: Tiamat,
         url: 'https://drive.google.com/file/d/1wXSyHdpiWlelIs4-x-cZut_ItyvscnlN/view?usp=sharing',
+      },
+      {
+        name: 'Relics of the Dragon Gods Part 2',
+        description: 'The mighty dragons god have created powerful artifacts to reward their mortal followers. In part 2, discover the terrible power of the remaining two Chromatic Relics: Storm Maker and Cunning Lair!',
+        image: Tiamat,
+        url: 'https://drive.google.com/file/d/1DUH910mMisZXoL_Q8t470RLrh4FEdtfw/view?usp=sharing',
       }
     ]
   },
