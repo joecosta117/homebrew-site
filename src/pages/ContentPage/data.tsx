@@ -144,6 +144,14 @@ const contentData: contentDataType = {
         url: 'https://drive.google.com/file/d/1PHhgyhQk1tFs06TX7V99X00P5ky-smYc/view?usp=sharing',
       }
     ],
+    items: [
+      {
+        name: 'Relics of the Dragon Gods Part 1',
+        description: 'The mighty dragons god have created powerful artifacts to reward their mortal followers. In part 1, discover the terrible power of the first three Chromatic Relics: Fiery Wrath, Dread Stalker, and White Fang!',
+        image: Tiamat,
+        url: 'https://drive.google.com/file/d/1uIPBCdvD5-EbJ2WxB9S5JS6j4LtYOmlP/view?usp=sharing',
+      },
+    ],
     spells: [
       {
         name: '',

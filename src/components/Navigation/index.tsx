@@ -173,6 +173,13 @@ function Navigation() {
               >
                 Classes
               </Link>
+              <Link
+                className="navigation__links-container__dropdown__item"
+                to="/2e-magic-items"
+                onClick={toggleMobileNav}
+              >
+                Magic Items
+              </Link>
             </div>
           </div>
 
