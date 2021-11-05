@@ -9,6 +9,8 @@ import Warlord from '../../assets/warlord.jpeg';
 import Avenger from '../../assets/avenger.jpeg';
 import WildMagic from '../../assets/wild-magic.jpeg';
 import Tiamat from '../../assets/tiamat.jpeg';
+import CelestialDragon from '../../assets/celestial-dragons.jpeg';
+import HelmOfHeroes from '../../assets/helm-of-heroes.jpeg';
 
 export interface contentInfoType {
   name: string,
@@ -46,16 +48,22 @@ const contentData: contentDataType = {
     ],
     monsters: [
       {
-        name: 'Infernal Linnorm',
-        description: 'Infernal linnorms are lava swimming devils that resemble wingless dragons. These hellish linnorms have three separate statblocks divided by age: young, mature, and elder.',
-        image: InfernalLinnorm,
-        url: 'https://drive.google.com/file/d/1pzxFy6wt9O_Blmr5lYr1vjA55QU28ajF/view?usp=sharing',
+        name: 'Celestial Dragon',
+        description: 'The heavenly servants of Bahamut, the noble dragon god, the celestial dragons inspire the righteous in their battle against the forces of the darkness.',
+        image: CelestialDragon,
+        url: 'https://drive.google.com/file/d/1wSX727Zlv2VdLYT4B0fVnsuEqhCCFCUZ/view?usp=sharing',
       },
       {
         name: 'Darkness Devil',
         description: 'Shadowy and cruel fiends, darkness devils are assassins of the Nine Hells. Archdevils send darkness devils to kill their foes, whether other devils, demons, or mortals.',
         image: DarknessDevil,
         url: 'https://drive.google.com/file/d/1JTNum2hCOCZxzEMclSDX2tkyAkZqGK9W/view?usp=sharing',
+      },
+      {
+        name: 'Infernal Linnorm',
+        description: 'Infernal linnorms are lava swimming devils that resemble wingless dragons. These hellish linnorms have three separate statblocks divided by age: young, mature, and elder.',
+        image: InfernalLinnorm,
+        url: 'https://drive.google.com/file/d/1pzxFy6wt9O_Blmr5lYr1vjA55QU28ajF/view?usp=sharing',
       },
       {
         name: 'Lesser Bone Devil',
@@ -92,6 +100,12 @@ const contentData: contentDataType = {
         description: 'The mighty dragons god have created powerful artifacts to reward their mortal followers. In part 2, discover the terrible power of the remaining two Chromatic Relics: Storm Maker and Cunning Lair!',
         image: Tiamat,
         url: 'https://drive.google.com/file/d/1DUH910mMisZXoL_Q8t470RLrh4FEdtfw/view?usp=sharing',
+      },
+      {
+        name: 'Relics of the Dragon Gods Part 3',
+        description: 'The mighty dragons god have created powerful artifacts to reward their mortal followers. In part 3, discover the majestic power of the Helm of Heroes and the holy Celestial Dragons!',
+        image: HelmOfHeroes,
+        url: 'https://drive.google.com/file/d/1428xqEjin1LyRAS0_iCZqIDVdwTz2C-c/view?usp=sharing',
       }
     ]
   },
