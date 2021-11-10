@@ -165,6 +165,12 @@ const contentData: contentDataType = {
         image: Tiamat,
         url: 'https://drive.google.com/file/d/1uIPBCdvD5-EbJ2WxB9S5JS6j4LtYOmlP/view?usp=sharing',
       },
+      {
+        name: 'Relics of the Dragon Gods Part 2',
+        description: 'The mighty dragons god have created powerful artifacts to reward their mortal followers. In part 2, discover the terrible power of the remaining two Chromatic Relics: Storm Maker and Cunning Lair!',
+        image: Tiamat,
+        url: 'https://drive.google.com/file/d/1uca_Y8geRUtNf4Waovq1iMHCmYI8z2r3/view?usp=sharing',
+      },
     ],
     spells: [
       {
