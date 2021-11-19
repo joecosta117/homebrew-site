@@ -117,6 +117,13 @@ function Navigation() {
               </Link>
               <Link
                 className="navigation__links-container__dropdown__item"
+                to="/5e-spells"
+                onClick={toggleMobileNav}
+              >
+                Spells
+              </Link>
+              <Link
+                className="navigation__links-container__dropdown__item"
                 to="/5e-subclasses"
                 onClick={toggleMobileNav}
               >

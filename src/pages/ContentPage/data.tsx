@@ -11,6 +11,7 @@ import WildMagic from '../../assets/wild-magic.jpeg';
 import Tiamat from '../../assets/tiamat.jpeg';
 import CelestialDragon from '../../assets/celestial-dragons.jpeg';
 import HelmOfHeroes from '../../assets/helm-of-heroes.jpeg';
+import Spells from '../../assets/spells.jpeg';
 
 export interface contentInfoType {
   name: string,
@@ -78,6 +79,14 @@ const contentData: contentDataType = {
         description: 'More options for players looking to play fiendish tieflings such as mortals descended from tricky rakshasa or cruel yugoloth. There are also options to play a tiefling tied to the chaotic demons of the Abyss with subraces for 10 demon lords!',
         image: Tieflings,
         url: 'https://drive.google.com/file/d/1JOKOj3WHrF8W9A4nWhbnlh79NxpGxzPq/view?usp=sharing',
+      }
+    ],
+    spells: [
+      {
+        name: 'Dragon Spells',
+        description: 'Transform your hands into elemental claws, blast back foes with dragon wings, call forth the holy magic of celestial dragons, or harness the destructive power of chromatic dragons!',
+        image: Spells,
+        url: 'https://drive.google.com/file/d/1pgjd5HT1k-M_-1Bg5nvSYVrPrH6IVSAq/view?usp=sharing',
       }
     ],
     systems: [
