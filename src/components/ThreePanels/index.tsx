@@ -14,6 +14,7 @@ function ThreePanels() {
         <Link className="three-panels__section__link" to="/5e-classes">New Classes</Link>
         <Link className="three-panels__section__link" to="/5e-subclasses">New Subclasses</Link>
         <Link className="three-panels__section__link" to="/5e-races">New Races</Link>
+        <Link className="three-panels__section__link" to="/5e-magic-items">New Magic Items</Link>
         <Link className="three-panels__section__link" to="/5e-monsters">New Monsters</Link>
       </div>
 
@@ -28,6 +29,8 @@ function ThreePanels() {
         <Link className="three-panels__section__link" to="/2e-classes">New Classes</Link>
         <Link className="three-panels__section__link" to="/2e-archetypes">New Archetypes</Link>
         <Link className="three-panels__section__link" to="/2e-ancestries">New Ancestries</Link>
+        <Link className="three-panels__section__link" to="/2e-magic-items">New Magic Items</Link>
+        <Link className="three-panels__section__link" to="/2e-monsters">New Monsters</Link>
       </div>
     </div>
   );

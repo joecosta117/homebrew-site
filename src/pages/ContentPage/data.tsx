@@ -180,6 +180,20 @@ const contentData: contentDataType = {
         image: Tiamat,
         url: 'https://drive.google.com/file/d/1uca_Y8geRUtNf4Waovq1iMHCmYI8z2r3/view?usp=sharing',
       },
+      {
+        name: 'Relics of the Dragon Gods Part 3',
+        description: 'The mighty dragons god have created powerful artifacts to reward their mortal followers. In part 3, discover the majestic power of the Helm of Heroes and the holy Celestial Dragons!',
+        image: HelmOfHeroes,
+        url: 'https://drive.google.com/file/d/1uca_Y8geRUtNf4Waovq1iMHCmYI8z2r3/view?usp=sharing',
+      }
+    ],
+    monsters: [
+      {
+        name: 'Celestial Dragons',
+        description: 'The heavenly servants of Apsu, the noble dragon god, the celestial dragons inspire the righteous in their battle against the forces of the darkness.',
+        image: CelestialDragon,
+        url: 'https://drive.google.com/file/d/1ZA0e8jmHF07gvtVjBn53ro-XCFSpF4fF/view?usp=sharing'
+      }
     ],
     spells: [
       {

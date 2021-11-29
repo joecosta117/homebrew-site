@@ -28,6 +28,7 @@ function App() {
             <Route exact path="/2e-archetypes" component={ContentPage} />
             <Route exact path="/2e-classes" component={ContentPage} />
             <Route exact path="/2e-magic-items" component={ContentPage} />
+            <Route exact path="/2e-monsters" component={ContentPage} />
             <Route exact path="/contact" component={EmailPage} />
           </Switch>
         </div>
