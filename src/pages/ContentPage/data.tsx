@@ -49,6 +49,12 @@ const contentData: contentDataType = {
     ],
     monsters: [
       {
+        name: 'Avatar of Tiamat',
+        description: 'My beefed up version of Tiamat to use against high level adventurers, including my own behemoth creature rules. Turn any creature into a behemoth to make a memorable boss battle!',
+        image: Tiamat,
+        url: 'https://drive.google.com/file/d/1d9Um40dig7VwaOrwWJnlmjTT_zSLrC1g/view?usp=sharing',
+      },
+      {
         name: 'Celestial Dragon',
         description: 'The heavenly servants of Bahamut, the noble dragon god, the celestial dragons inspire the righteous in their battle against the forces of the darkness.',
         image: CelestialDragon,
