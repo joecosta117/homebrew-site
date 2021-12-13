@@ -147,6 +147,12 @@ const contentData: contentDataType = {
         url: 'https://drive.google.com/file/d/1nXHtElxuGrK9_NQccyBsVJWgzKTSqWKc/view?usp=sharing',
       },
       {
+        name: 'Dragon Witches',
+        description: 'The most ancient and ambitious dragons possess magic beyond the grasp of most mortals. These elder wyrms sometimes bestow their knowledge to witches through a mutual patronage.',
+        image: Spells,
+        url: 'https://drive.google.com/file/d/1xEl1NVfdLXmnwU0gZF2U5Xl03Rc2HLr7/view?usp=sharing',
+      },
+      {
         name: 'Eldritch Scion',
         description: 'Play as a Magus whose power comes from a powerful magical bloodline much like a Sorcerer. This class archetype transforms the Magus into a charismatic, spontaneous spellcaster!',
         image: SwordmageImage,
