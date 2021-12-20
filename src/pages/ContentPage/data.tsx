@@ -41,6 +41,12 @@ const contentData: contentDataType = {
   dnd: {
     classes: [
       {
+        name: 'Summoner',
+        description: 'With the power of conjuration magic, bond with a creature from the outer planes to fight alongside you. Including 4 subclasses, alternative class features,a feat, new spells, and new magic items!',
+        image: 'https://cdnb.artstation.com/p/assets/images/images/023/402/917/large/billy-christian-eternalservitude-final-3.jpg?1579090494',
+        url: 'https://drive.google.com/file/d/166YvIbnZeA_6lzuNdnvUn0BPgnN-lPsn/view'
+      },
+      {
         name: 'Swordmage',
         description: 'Play as a spellsword, an arcane warrior that blends magic with their attacks. Including 10 subclasses, 30+ new spells, alternative class features, and a magic item!',
         image: SwordmageImage,
