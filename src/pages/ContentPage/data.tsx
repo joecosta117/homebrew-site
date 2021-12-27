@@ -164,6 +164,13 @@ const contentData: contentDataType = {
         image: SwordmageImage,
         url: 'https://drive.google.com/file/d/1I5WM3cSsKsDDGLBMdvTrqtuRkhANefGB/view?usp=sharing',
       },
+      
+      {
+        name: 'Templar',
+        description: 'Templars eschew magical prowess for martial might, even more so than a warpriest. This class archetype transforms the Cleric into a divine warrior!',
+        image: 'https://images.squarespace-cdn.com/content/v1/52bf4762e4b0171d9d785d34/1411522250478-5EZ5LSZHUWEXX7X0E3VT/image-asset.jpeg',
+        url: 'https://drive.google.com/file/d/1WWQhSA8raqd0GTQ_cVA6V92UZQPvzhDL/view?usp=sharing',
+      },
       {
         name: 'Wild Magic Sorcerer',
         description: 'Your innate magic comes from the forces of chaos, such as magical experimentation or being marked by a creature of chaos. Play as an arcane sorcerer that commands unpredictable magic!',
