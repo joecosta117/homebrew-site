@@ -18,11 +18,12 @@ function ThreePanels() {
         <Link className="three-panels__section__link" to="/5e-monsters">New Monsters</Link>
       </div>
 
-      <div className="three-panels__section">
+      {/* TODO: add back if patreon relaunched */}
+      {/* <div className="three-panels__section">
         <div className="three-panels__section__title">Fanatical DM's Patreon</div>
         <div className="three-panels__section__section">Join the Patreon to Support Future Homebrew!</div>
         <button className="three-panels__section__button" onClick={redirect}>Support on Patreon</button>
-      </div>
+      </div> */}
       
       <div className="three-panels__section">
         <div className="three-panels__section__title">Pathinder 2E Content</div>

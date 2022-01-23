@@ -35,18 +35,24 @@ function Footer() {
           </a>
         </div>
 
-        <div className="footer__patreon">
+        {/* TODO: add back if patreon relaunched */}
+        {/* <div className="footer__patreon">
           <div className="footer__patreon__description">
             Made possible by your monthly support
           </div>
           <button className="footer__patreon__button" onClick={redirect}>
             Support on Patreon
           </button>
-        </div>
+        </div> */}
 
         <div className="footer__disclaimer">
-          <div className="footer__disclaimer__text">
+          {/* TODO: add back and replace other if patreon relaunched */}
+          {/* <div className="footer__disclaimer__text">
             All images used for the site or Patreon are property of Fanatical DM
+            or Wizards of the Coast.
+          </div> */}
+          <div className="footer__disclaimer__text">
+            All images used for the site are property of Fanatical DM
             or Wizards of the Coast.
           </div>
           <div className="footer__disclaimer__text">

@@ -8,7 +8,9 @@
 
   @include mq(m) {
     display: flex;
-    justify-content: space-around;
+    // TODO: add back in if patreon relaunches
+    // justify-content: space-around;
+    justify-content: space-evenly;
     padding-left: 32px;
     padding-right: 32px;
   }

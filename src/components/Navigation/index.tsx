@@ -249,7 +249,8 @@ function Navigation() {
             </div>
           </div>
 
-          <div className="navigation__links-container" data-open-mobile="true">
+          {/* TODO: add back if patreon relaunched */}
+          {/* <div className="navigation__links-container" data-open-mobile="true">
             <div className="navigation__links-container__nav">
               <a
                 className="navigation__links-container__link"
@@ -261,7 +262,7 @@ function Navigation() {
                 Support on Patreon
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
         <div
           className="navigation__mobile-menu"
