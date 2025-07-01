@@ -3,9 +3,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Footer() {
-  function redirect() {
-    window.open('https://www.patreon.com/FanaticalDM', '_blank')
-  }
+  // function redirect() {
+  //   window.open('https://www.patreon.com/FanaticalDM', '_blank')
+  // }
 
   return (
     <div className="footer">
@@ -52,8 +52,8 @@ function Footer() {
             or Wizards of the Coast.
           </div> */}
           <div className="footer__disclaimer__text">
-            All images used for the site are property of Fanatical DM
-            or Wizards of the Coast.
+            All images used for the site are property of Fanatical DM or Wizards
+            of the Coast.
           </div>
           <div className="footer__disclaimer__text">
             Credits for art used in documents is attributed in documents as
